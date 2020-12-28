@@ -1,0 +1,543 @@
+@charset "utf-8";
+body {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	background:#fff none repeat scroll 0 0 ;
+}
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, form, p, dl, dt, dd, legend, table, th, td, fieldset {
+    margin: 0;
+    padding: 0;
+}
+a, a:link, a:visited {
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+	color:#9B2404;
+}
+a:hover{
+	color:red;
+}
+.btn_blue, .btn_red, .btn_gray {
+    -moz-user-select: none;
+    border-radius: 3px 3px 3px 3px;
+    cursor: point;
+    display: inline-block;
+    font-family: Simsun;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    min-width: 24px;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.btn_gray{
+	border: 1px solid #888;
+	color: black;
+	color: black!important;
+	background: #F3F3F3;
+	background: -moz-linear-gradient(top,white 0%,#EBEBEB 90%,#F3F3F3 100%);
+	background: -webkit-linear-gradient(top,white 0%,#EBEBEB 90%,#F3F3F3 100%);
+	background: -o-linear-gradient(top,white 0%,#EBEBEB 90%,#F3F3F3 100%);
+	background: -ms-linear-gradient(top,white 0%,#EBEBEB 90%,#F3F3F3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#d7d7d7',GradientType=0 );
+	background: linear-gradient(top,white 0%,#EBEBEB 90%,#F3F3F3 100%);
+}
+.btn_gray:active, .btn_gray_active {
+	border-color:#7e7e7e;
+	background:#F3F3F3;
+	background:-moz-linear-gradient(top, #ebebeb, #F3F3F3);
+	background:-webkit-linear-gradient(top, #ebebeb, #F3F3F3);
+	background:-o-linear-gradient(top, #ebebeb, #F3F3F3);
+	background:-ms-linear-gradient(top, #ebebeb, #F3F3F3);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#F3F3F3', GradientType=0 );
+	background:linear-gradient(top, #ebebeb, #F3F3F3);
+}
+fieldset {
+    border: 1px solid #BFBFBF;
+	border-radius: 5px 5px 5px 5px;
+    margin: 10px 0;
+    padding: 8px;
+}
+legend {
+    font-weight: bold;
+	font-size:12px;
+    padding: 0 6px;
+}
+.frame-top{
+	background: url(../image/common/frame_topbg.png) repeat-x 0 0;
+}
+.topdata{
+	background:url(../image/common/frame_top.png) 0 0 no-repeat;
+	height:70px;
+}
+.frame-left{
+	width:212px;
+	border:0px solid #dbdbdb;
+	background:url(../image/common/frame_leftbg.png) repeat-y 0 0;
+	overflow-x: hidden;
+    overflow-y: auto;
+	position:absolute;
+	left:0;
+	top:70px;
+	right:0;
+	bottom:0;
+}
+.frame-main{
+	position:absolute;
+	left:212px;
+	top:70px;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	z-index:4;
+}
+ul,li{
+	list-style:none;
+}
+.clearboth{
+	height:0;
+	clear:both;
+	overflow:hidden;
+}
+#SysIcon{
+	background:url(../image/common/sysicon.png) no-repeat center center;
+	width:160px;
+	height:70px;
+	position: absolute;
+	top:0;
+	left:0px;
+	bottom:0;
+}
+.systitle{
+	color:#fff;
+	width:255px;
+	height:70px;
+	line-height:70px;
+	position: absolute;
+	left:170px;
+	top:0;
+	bottom:0;
+}
+.siteinfo{
+	width:350px;
+	height:70px;
+	position:absolute;
+	top:0;
+	right:50px;
+	bottom:0;
+	color:#fff;
+	text-align:right;
+}
+.siteinfo p{
+	height:25px;
+	line-height:25px;
+	margin-top:15px;
+}
+.toprightmenu{
+	height:25px;
+	line-height:25px;
+}
+.toprightmenu a{
+	color:#FFF;
+}
+.split{
+	color:#fff;
+	margin:0 3px;
+}
+.leftmenu .dropmenu{
+	display:block;
+	width:161px;
+	height:30px;
+	line-height:30px;
+	padding-left:35px;
+	background: url(../image/common/collapsed.gif) 24px center no-repeat #f5f5f5;
+	color:#000000;
+	border-bottom:1px #e3e3e3 solid;
+	border-top:1px solid #fff;
+	cursor:pointer;
+}
+.submenu {
+	display:none;
+}
+.submenu li{
+	padding-left:45px;
+	background:#FFF;
+	color:#000;
+	font:12px "宋体";
+	height:20px;
+	line-height:20px;
+	width: 145px;
+	line-height:25px;
+	cursor:pointer;
+	background: url(../image/common/icon_pic3.gif) 35px center no-repeat;
+}
+.submenu li a{
+	height:20px;
+	line-height:20px;
+}
+.submenu li:hover{
+	background-color:#f5f5f5;
+}
+#MainFrame{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:5;
+}
+
+/** 登录页面样式 */
+.logincontainer{
+	height:490px;
+	width:955px;
+	position:relative;
+	margin:0 auto;
+	top:70px;
+}
+.logintitle{
+	height:64px;
+	background: url(../image/common/sysicon_red.png) 10px center no-repeat;
+	width:100%;
+	line-height:64px;
+	color:#da191f;
+	font-family:"微软雅黑";
+	font-size:32px;
+	font-weight: bold;
+	padding-left:100px;
+}
+.loginbg{
+	position: relative;
+	background:url(../image/common/loginbg.png) center 23px no-repeat;
+	width:955px;
+	height:360px;
+}
+.loginfmbg{
+	background:url(../image/common/loginfmbg.png) 0 0 no-repeat;
+	width:313px;
+	height:338px;
+	position: relative;
+	left:540px;
+	top:0;
+}
+.sysname{
+	height:65px;
+	line-height:65px;
+	text-align:center;
+	color:#000;
+	font-size:20px;
+	font-weight:bold;
+}
+.copyright{
+	border-top:1px solid #c4c4c4;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	color:#7c7979;
+	width:100%;
+}
+.loginfm{
+	height:118px;
+	margin:35px auto;"
+}
+.loginfm input:text{
+	input:vertical-align:middle;
+	border:1px solid #d5d5d5;
+	border-radius:3px;
+	width:120px;
+}
+.loginfm p{
+	margin:16px 0;
+	display:block;
+}
+.loginfm  .lbright{
+	text-align:right;
+	display:inline-block;
+	width:80px;
+	margin-right: 10px;
+}
+.loginfm .spinput{
+	
+}
+.loginfm .blurry {
+    color: #0B4F95;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0;
+    padding-right: 57px;
+    text-align: right;
+}
+.submitcon{
+	text-align:center;
+}
+.submitcon .btn_login{
+	background:url(../image/common/loginbtn_bg.png) 0 0 no-repeat;
+	cursor:pointer;
+	margin:0 auto;
+	width:85px;
+	height:40px;
+	position:relative;
+	top:15px;
+}
+.submitcon .btn_login:hover{
+	background-position:0 -46px;
+}
+
+/** 列表页面 */
+.nested{
+	overflow-x: hidden;
+}
+input:text{
+	width:100px;
+}
+select{
+	width:100px;
+}
+input:text,input:checkbox,input:redio{
+	vertical-align:middle;
+}
+input:text,select{
+	vertical-align:middle;
+	border:1px solid #d5d5d5;
+	border-radius:3px;
+}
+input:button{
+	cursor:pointer;
+}
+.btn {
+    background: none repeat scroll 0 0 #AF1F08;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+	border-radius:3px;
+	border:1px solid #333;
+	font-family: Simsun;
+	margin-right:10px;
+}
+.maincontainer{
+	font-family: "lucida Grande",Verdana;
+	font-size:12px;
+}
+.columnconn {
+	background-color:#f5f5f5;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid #d7d7d7;
+}
+.columntitle{
+	color:#4d4d4d;
+	font-weight:bold;
+	margin:0 20px;
+	font-size:14px;
+}
+.fmcontainer{
+	padding:5px;
+	width:100%;
+	height:100%;
+}
+table.inputtable{
+	border-collapse:collapse;
+	border:#d3d3d3 solid;
+	border-width:1px 0 0 1px;
+}
+table.inputtable caption {
+	font-size:14px;
+	font-weight:bold;
+}
+table.inputtable th,table.inputtable td {
+	border:solid #d3d3d3;
+	border-width:0 1px 1px 0;
+	padding:2px;
+}
+.leftlabel{
+	text-align:right;
+	background-color:#f9f9f9;
+}
+.reightinput{
+	text-align:left;
+}
+.fmsubmitbtn{
+	text-align:center;
+	height:40px;
+	line-height:40px;
+}
+
+/** 列表页面样式 */
+.listcontainer{
+	padding:5px;
+}
+#toolbar .searchcon{
+	float: right;
+	margin:2px 5px;
+}
+#toolbar a.advancedsearch{
+	display:inline-block;
+	float:right;
+	margin:0 5px;
+	color:#444444;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	cursor: pointer;
+	overflow:hidden;
+}
+#toolbar a.advancedsearch:hover{
+	color:#000;
+}
+#advancedsearchcon{
+	border:1px solid #95B8E7;
+	background-color:#f4f4f4;
+	margin:5px 0;
+	display:none;
+}
+.advsearchtitle {
+    border-bottom: 1px solid #95B8E7;
+    height: 25px;
+    line-height: 25px;
+}
+.advsearchtitle span {
+    color: #4D4D4D;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+	cursor:pointer;
+}
+.advsearchcontent {
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+}
+.querycondition .addcondbtn{
+	background:url(../image/icon/addcondbtn.png) no-repeat;
+	float:left;
+	width:16px;
+	cursor: pointer;
+	height:16px;
+}
+.querycondition .removecondbtn{
+	background:url(../image/icon/removecondbtn.png) no-repeat;
+	float:left;
+	width:16px;
+	height:16px;
+	margin-left:15px;
+	cursor: pointer;
+}
+.groupbrowse .kind{
+	list-style:none;
+	height:24px;
+	margin-left:3px;
+}
+.groupbrowse .kind li{
+	float:left;
+	padding:0 5px;
+	height:22px;
+	line-height:22px;
+	cursor: pointer;
+	position:relative;
+	bottom:-1px;
+}
+.kindhover{
+	border-bottom:1px solid #c5c5c5;
+	border-radius:3px 3px 0 0;
+}
+.kindlihover{
+	margin-left:5px;
+	border:1px solid #c5c5c5;
+	border-bottom:1px solid #fff;
+	border-radius:4px 4px 0 0;
+}
+.subkind{
+	width:100%;
+	display:none;
+	clear:both;
+	border:1px solid #ccc;
+	border-top:none;
+	border-radius:4px;
+	position:relative;
+	z-index:100;
+	top:-1px;
+}
+.subkind .close{
+	background:url(../image/icon/close.png) no-repeat center center;
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:3px;
+	right:3px;
+	cursor: pointer;
+}
+.subkind ul{
+	margin:0 20px 0 5px;
+	padding:5px 0;
+}
+.subkind ul li{
+	float:left;
+	margin:1px 5px;
+	height:20px;
+	line-height:20px;
+	cursor:pointer;
+}
+.subkind ul li.sel{
+	background-color:#FF6600;
+	color:#FFF;
+}
+.searchtoolbar{
+	text-align:center;
+}
+
+
+
+.list_table{
+	border-collapse: collapse;
+    width: 98%;
+	border-spacing: 0;
+    clear: both;
+	border:#D2D2D2 solid;
+	border-width:1px 0 0 1px;
+	
+}
+.tr_even{
+	background-color:#F0F7FF;
+}
+.list_table .over{
+	background-color:#fdffe1;
+}
+.rowhover{
+	background-color:#E3E6EB;
+}
+.list_table th {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D2D2D2;
+    height: 28px;
+    overflow: hidden;
+	text-align:center;
+	font-weight: bold;
+}
+.list_table th,.list_table td{
+	padding: 5px 10px;
+    word-wrap: break-word;
+	border:solid #D2D2D2;
+	border-width:0 1px 1px 0;
+	vertical-align:middle;
+}
+.list_table .checkbox_first{
+	text-align:center;
+}
+.toolbg{
+	background:#BED393;
+	height:38px;
+	line-height:28px;
+	border-bottom:1px solid #87A34D;
+	margin:5px 0;
+	width:98%;
+}
+.toolbg .pagination{
+	color:#000;
+	float:right;
+	margin:5px 10px;
+}
+.pagination a{
+	color:#000;
+}
